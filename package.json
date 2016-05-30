@@ -1,6 +1,6 @@
 {
   "name": "aiport-annex-package",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "manage aiport packages",
   "main": "package.js",
   "scripts": {
