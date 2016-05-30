@@ -1,0 +1,24 @@
+{
+  "name": "aiport-annex-package",
+  "version": "0.0.1",
+  "description": "manage aiport packages",
+  "main": "package.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surprisetalk/aiport-annex-package.git"
+  },
+  "keywords": [
+    "aiport",
+    "annex",
+    "package"
+  ],
+  "author": "taylor sarrafian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surprisetalk/aiport-annex-package/issues"
+  },
+  "homepage": "https://github.com/surprisetalk/aiport-annex-package#readme"
+}
