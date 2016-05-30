@@ -2,5 +2,5 @@
 // TODO: require aiport-dev
 
 module.exports = {
-    index: "package.jade"
+    index: "node_modules/aiport-annex-package/package.jade"
 };
