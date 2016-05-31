@@ -1,2 +1,8 @@
 
-h1 packages
+h1 package
+h2= type
+h3= name
+if installed
+  a(href="/!/admin/package/uninstall?type="+type+"&name="+name) uninstall
+else
+  a(href="/!/admin/package/install?type="+type+"&name="+name) install

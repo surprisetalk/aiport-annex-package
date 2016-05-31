@@ -1,0 +1,21 @@
+
+h1 packages
+div
+  h2 installed
+  ul
+    each packages, type in installed
+      li= type
+        ul
+          each name in packages
+            a(href="/!/admin/packages/package?type="+type+"&name="+name)
+              li= name
+              //- a(href="/!/admin/packages/install?package=aiport-"+type+"-"+package) install
+div
+  h2 available
+  ul
+    each packages, type in available
+      li= type
+        ul
+          each name in packages
+            a(href="https://www.npmjs.com/package/aiport-"+type+"-"+name)
+              li= name
