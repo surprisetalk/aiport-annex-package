@@ -7,7 +7,7 @@ div
       li= type
         ul
           each name in packages
-            a(href="/!/admin/packages/package?type="+type+"&name="+name)
+            a(href="/!/admin/package/package?type="+type+"&name="+name)
               li= name
               //- a(href="/!/admin/packages/install?package=aiport-"+type+"-"+package) install
 div
@@ -17,5 +17,5 @@ div
       li= type
         ul
           each name in packages
-            a(href="https://www.npmjs.com/package/aiport-"+type+"-"+name)
+            a(href="/!/admin/package/package?type="+type+"&name="+name)
               li= name

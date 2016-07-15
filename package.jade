@@ -2,7 +2,16 @@
 h1 package
 h2= type
 h3= name
+
+// TODO: package description, version, etc
+
+a(href="https://www.npmjs.com/package/aiport-"+type+"-"+name)
 if installed
-  a(href="/!/admin/package/uninstall?type="+type+"&name="+name) uninstall
+  a(href="#",id="uninstall") uninstall
 else
-  a(href="/!/admin/package/install?type="+type+"&name="+name) install
+  a(href="#",id="install") install
+
+script(type="text/javascript").
+  var a = function( data ) { console.log( data ) };
+  $('#install').click( function() { $.post( "/package/install/#{type}/#{name}" ).done( a ).fail( a ) } );
+  $('#uninstall').click( function() { $.post( "/package/uninstall/#{type}/#{name}" ).done( a ).fail( a ) } );
